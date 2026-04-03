@@ -61,6 +61,9 @@ main div p{
   border-width: 4px;
   object-fit: cover;
 }
+a{
+    color: black;
+}
 
 /* estilos de footer */
 
@@ -96,7 +99,7 @@ header{
 .grilla{
   display: grid;
   grid-template-columns: repeat(2, 2fr);
-  grid-template-rows: repeat(2, 50%);
+  grid-template-rows: repeat(4, 50%);
   gap: 70px;
 }
 
