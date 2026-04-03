@@ -1,0 +1,28 @@
+//comentario en sass
+/*comentario en sass y en css*/
+
+//import/use
+@use "utilities/variables" as *;
+@use "utilities/listas" as *;
+//nesting
+header{
+    background-color: nth($lista-colores , 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .logo{
+        width: 100%;
+    }
+    nav{
+        ul{
+            color: $color-principal;
+            display: flex;
+        }
+    }
+}
+
+main{
+    .card-producto{
+        width: $medida-principal * 2;
+    }
+}
