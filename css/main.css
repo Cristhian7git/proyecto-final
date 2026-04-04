@@ -41,19 +41,37 @@ header{
 main{
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, 21%);
+  grid-template-rows: repeat(12, 21%);
   width: 100%;
   height: 25%;
   padding: 2rem;
   gap: 1rem;
   background-color: beige;
 }
-
+main .titulo{
+    display: block;
+    background-color: beige;
+    padding-left: 0%;
+    padding-right: 10%;
+}
+.ultimo{
+    display: none;
+}
+main .titulo p{
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 0%;
+}
 main div p{
   text-align: center;
   text-decoration: underline;
 }
-
+main .banner{
+    width: 100%;
+    height: 35%;
+    padding-left: 10%;
+    padding-top: 20%;
+}
 .grilla img{
   width: 100%;
   height: 100%;
@@ -64,7 +82,9 @@ main div p{
 a{
     color: black;
 }
-
+a:hover{
+    color: red;
+}
 /* estilos de footer */
 
 footer{
@@ -76,7 +96,16 @@ footer{
 /* mq tablet */
 
 @media (min-width: 768px){
-  
+  main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(100, 21%);
+    width: 100%;
+    height: 25%;
+    padding: 2rem;
+    gap: 1rem;
+    background-color: beige;
+  }
 }
 
 /* mw desktop */
@@ -90,6 +119,12 @@ header{
   width: 100px;
   height: 250px;
   object-fit: fill;
+}
+main .titulo p{
+    display: block;
+    text-decoration: solid;
+    line-height: 2rem;
+    font-size: larger;
 }
 .grilla img{
   width: 100%;
